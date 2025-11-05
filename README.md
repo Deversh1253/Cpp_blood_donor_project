@@ -1,6 +1,9 @@
 - About This Project 
-The Blood life is a computer application developed using C++ programming language. It helps hospitals and blood banks find blood donors quickly during emergencies. The application uses Qt (a framework for creating graphical user interfaces) and MySQL (a database management system to store information).
-What makes this application special is that it implements a multi-stage verification and availability system. Donors must first be approved by administrators before appearing in searches, and they can control their real-time availability status. This smart feature ensures that hospitals only contact verified, available donors, saving critical time during emergencies.
+The Blood life is a computer application developed using C++ programming language. It helps hospitals and blood banks find blood donors quickly during emergencies.
+The application uses Qt (a framework for creating graphical user interfaces) and MySQL (a database management system to store information).
+What makes this application special is that it implements a multi-stage verification and availability system.
+Donors must first be approved by administrators before appearing in searches, and they can control their real-time availability status.
+This smart feature ensures that hospitals only contact verified, available donors, saving critical time during emergencies.
 ________________________________________
 
 - The Problem We Are Solving
@@ -22,7 +25,8 @@ When someone needs blood urgently in a hospital, finding a donor is very difficu
 •	Cannot predict when there will be a shortage of blood
 •	Cannot plan blood donation camps properly
 •	No data to analyze demand patterns
-What Happens: Because of these problems, patients have to wait longer to get blood, which can be dangerous for their health. Hospitals waste time contacting unverified or unavailable donors, and blood banks cannot efficiently plan donation drives.
+What Happens: Because of these problems, patients have to wait longer to get blood, which can be dangerous for their health.
+             Hospitals waste time contacting unverified or unavailable donors, and blood banks cannot efficiently plan donation drives.
 ________________________________________
 
 - How Our System Solves These Problems
@@ -216,7 +220,9 @@ Future Improvements We Can Make
 ________________________________________
 
 Conclusion
-The Blood life transforms how we connect blood donors with those in need. Instead of making hundreds of phone calls and hoping for the best, we now have an intelligent, multi-layered system that ensures only verified, available, and eligible donors are contacted.
-The three-stage filtering process (admin approval, donor availability, and blood type matching) ensures that hospitals waste no time during critical emergencies. By giving donors control over their availability and implementing a robust approval system, we respect donor autonomy while maintaining database quality.
+The Blood life transforms how we connect blood donors with those in need.
+Instead of making hundreds of phone calls and hoping for the best, we now have an intelligent, multi-layered system that ensures only verified, available, and eligible donors are contacted.
+The three-stage filtering process (admin approval, donor availability, and blood type matching) ensures that hospitals waste no time during critical emergencies.
+By giving donors control over their availability and implementing a robust approval system, we respect donor autonomy while maintaining database quality.
 By tracking donation history, automating eligibility calculations, and providing powerful analytics, this system not only saves time but can actually save lives by ensuring the right donor is found at the right moment. The separate interfaces for donors, hospitals, and administrators make the system intuitive and efficient for all stakeholders.
 This is more than just a database—it's a comprehensive blood donor management ecosystem that addresses real-world challenges with practical, technology-driven solutions. It's simple to use, intelligent in how it operates, and solves a critical problem that affects people every day.
