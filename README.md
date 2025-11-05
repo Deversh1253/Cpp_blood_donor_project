@@ -285,9 +285,9 @@ The system uses independent, modular classes:
 
 **Project Contributors**
 
-- Deversh Shetgaonkar (2302)
-- Atharv Gawas (2313)
-- Shripad Chodankar (2317)
+- Deversh  
+- Atharv  
+- Shripad  
 
 ---
 
