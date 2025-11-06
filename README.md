@@ -172,7 +172,7 @@ The system uses independent, modular classes:
 
 ### UML Diagram
 
-![Cpp_blood_donor_project](imgs/latest_uml_img_frm_plantuml.png)
+![Cpp_blood_donor_project](imgs/latest_uml_img_frm_plantuml.jpeg)
 
 ---
 
