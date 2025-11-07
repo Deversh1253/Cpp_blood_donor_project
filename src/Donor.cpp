@@ -39,6 +39,13 @@ void Donor::updateAvailability(DatabaseManager& db, bool newStatus) {
     cout << "Availability updated successfully.\n";
 }
 
+void Donor::updateEligibility(DatabaseManager& db) {
+    string query = "UPDATE Donor SET eligibilityStatus = "
+                   "(DATEDIFF(CURDATE(), lastDonationDate) >= 90)";
+    db.executeQuery(query);
+}
+
+
 void Donor::showDonationHistory(DatabaseManager& db) {
     auto result = db.fetchResults("SELECT name, bloodGroup, city, lastDonationDate FROM Donor WHERE phone = '" + phone + "'");
     for (auto& row : result) {
