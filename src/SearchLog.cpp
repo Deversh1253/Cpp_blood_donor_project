@@ -23,4 +23,3 @@ vector<vector<string>> SearchLog::getSearchHistory(DatabaseManager& db, int hosp
 
     return db.fetchResults(query);
 }
-
