@@ -11,4 +11,3 @@ public:
     // Retrieve all past searches for a hospital
     static std::vector<std::vector<std::string>> getSearchHistory(DatabaseManager& db, int hospitalID);
 };
-
