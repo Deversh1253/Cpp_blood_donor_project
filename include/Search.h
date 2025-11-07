@@ -23,4 +23,3 @@ public:
     const std::string& getBloodGroup() const { return bloodGroup; }
     const std::string& getCity() const { return city; }
 };
-
