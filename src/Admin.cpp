@@ -9,9 +9,11 @@ void Admin::approveDonor(DatabaseManager& db, string phone) {
 }
 
 void Admin::rejectDonor(DatabaseManager& db, string phone) {
-    string query = "DELETE FROM Donor WHERE phone = '" + phone + "'";
-    if (db.executeQuery(query))
-        cout << "🚫 Donor rejected and removed from records.\n";
+    string reason;
+    cout << "Enter rejection reason: ";
+    getline(cin, reason);
+    string query = "UPDATE Donor SET approvalStatus = 0, rejectionReason = '" + reason + "' WHERE phone = '" + phone + "'";
+    db.executeQuery(query);
 }
 
 void Admin::removeInactiveDonor(DatabaseManager& db) {
