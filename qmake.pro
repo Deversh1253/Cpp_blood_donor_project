@@ -11,7 +11,7 @@ SOURCES += main.cpp \
            Search.cpp \
            SearchLog.cpp \
            Analytics.cpp \
-           ... (rest)
+           ... 
 
 HEADERS += GUIManager.h \
            DatabaseManager.h \
