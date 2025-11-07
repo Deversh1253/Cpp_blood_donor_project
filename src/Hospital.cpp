@@ -16,4 +16,3 @@ void Hospital::findDonors(DatabaseManager& db, string bloodGroup, string city) {
     if (results.empty())
         cout << "No donors found.\n";
 }
-
