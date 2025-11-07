@@ -22,3 +22,13 @@ void Admin::removeInactiveDonor(DatabaseManager& db) {
         cout << "🧹 Inactive donors removed successfully.\n";
 }
 
+void Admin::rejectDonor(DatabaseManager& db, string phone, const string& reason) {
+    // direct reject with reason (from UI)
+    string escapedReason = reason; // for demo only
+    string query = "UPDATE Donor SET approvalStatus = 0, rejectionReason = '" + escapedReason + "' WHERE phone = '" + phone + "'";
+    if (db.executeQuery(query)) {
+        cout << "✅ Donor rejected with reason recorded.\n";
+    } else {
+        cout << "❌ Failed to reject donor.\n";
+    }
+}
