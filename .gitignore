@@ -1,103 +1,65 @@
-# Combined .gitignore templates for all 3 i.e. Linux ,qt & C++
+##############################################
+# Qt 6 + CMake + C++ .gitignore (Final)
+##############################################
 
-### C++ ###
-# Prerequisites
-*.d
+### Build directories (MOST IMPORTANT)
+build/
+build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+*.ninja
+*.ninja_deps
+*.ninja_log
 
-# Compiled Object files
-*.slo
-*.lo
+### Compiled object & library files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
+*.so.*
 *.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
+*.dylib
 *.a
 *.lib
+*.la
+*.lo
 
-# Executables
+### Compiled executables
 *.exe
 *.out
 *.app
 
-### Linux ###
-*~
-
-# temporary files which can be created if a process still has a handle open of a deleted file
-.fuse_hidden*
-
-# KDE directory preferences
-.directory
-
-# Linux trash folder which might appear on any partition or disk
-.Trash-*
-
-# .nfs files are created when an open file is removed but is still being accessed
-.nfs*
-
-### Qt ###
-# C++ objects and libs
-*.so.*
-
-# Qt-es
-object_script.*.Release
-object_script.*.Debug
-*_plugin_import.cpp
-/.qmake.cache
-/.qmake.stash
-*.pro.user
-*.pro.user.*
-*.qbs.user
-*.qbs.user.*
-*.moc
+### Qt auto-generated files
 moc_*.cpp
 moc_*.h
 qrc_*.cpp
 ui_*.h
-*.qmlc
-*.jsc
-Makefile*
-*build-*
 *.qm
 *.prl
 
-# Qt unit tests
-target_wrapper.*
-
-# QtCreator
-*.autosave
-
-# QtCreator Qml
+### Qt Creator per-user data
+*.pro.user
+*.pro.user.*
+*.creator.user
+*.creator.user.*
 *.qmlproject.user
 *.qmlproject.user.*
 
-# QtCreator CMake
+### CMake Qt Creator
 CMakeLists.txt.user*
 
-# QtCreator 4.8< compilation database
-compile_commands.json
+### VS Code
+.vscode/
 
-# QtCreator local machine specific files for imported projects
-*creator.user*
+### Editor backups / temp files
+*.autosave
+*.swp
+*.swo
+*.bak
+*~
 
-*_qmlcache.qrc
-
-# Local environment / OS files
+### OS specific
 .DS_Store
 Thumbs.db
-*.swp
-*.bak
